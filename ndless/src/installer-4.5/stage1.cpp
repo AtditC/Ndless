@@ -36,6 +36,6 @@ int main()
 			" mcr p15, 0, r0, c7, c7, 0 @ invalidate ICache and DCache \n" ::: "r0");
 
         ((int (*)(int argc, void* argv))(core + sizeof("PRG")))(1, &res_argv);
-	syscall_local<e_disp_str, void>("Ndless installed!", &x, 0);
+	syscall_local<e_disp_str, void>("", &x, 0);
 	return 0;
 }
