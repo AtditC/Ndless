@@ -232,7 +232,7 @@ HOOK_DEFINE(ins_successsuccessmsg_hook) {
 		gui_gc_setColor(gc, has_colors ? 0x32cd32 : 0x505050);
 		gui_gc_setFont(gc, SerifRegular9);
 		gui_gc_drawString(gc, (char*) u"<Name>                              <Klasse> <Jahr>", 25, 4, GC_SM_TOP);
-		show_msgbox("Ndless", "Successfully installed Ndless r" STRINGIFY(NDLESS_REVISION) "\nModified version from https://github.com/AtditC/Ndless", "Ok")
+		show_msgbox("Ndless", "Successfully installed Ndless r" STRINGIFY(NDLESS_REVISION) "\nModified version from https://github.com/AtditC/Ndless");
 	}
 	HOOK_RESTORE_RETURN(ins_successsuccessmsg_hook);
 }
